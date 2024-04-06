@@ -102,7 +102,6 @@ public class WeatherAppGui extends JFrame {
             humidityText.setText("<html><b>Humidity</b>" + humidity + "%</html>");
 
             double windSpeed = parser.fromJson(this.weatherData.get("wind_speed"), Double.class);
-            System.out.println(windSpeed);
             windSpeedText.setText("<html><b>Wind Speed</b>" + windSpeed + "mph</html>");
 
         });

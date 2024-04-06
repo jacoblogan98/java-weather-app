@@ -14,7 +14,6 @@ public class WeatherApp {
 
     public static JsonObject getWeatherData(String locationName) {
         JsonArray locationData = getLocationData(locationName);
-        System.out.println(locationData);
         assert locationData != null;
         JsonObject location = (JsonObject) locationData.get(0);
         double latitude = parser.fromJson(location.get("latitude"), Double.class);
